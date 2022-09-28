@@ -41,7 +41,7 @@ useEffect(()=> {
     }
     else {
         const rest = cart.filter(product => product.id !== selectedProduct.id)
-        exists.quantity = exists + 1;
+        exists.quantity = exists.quantity + 1;
         newCart = [...rest, exists]
     }
     // const newCart = [...cart, selectedProduct]; 
